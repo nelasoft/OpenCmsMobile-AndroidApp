@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cz.nelasoft.opencms.mobile"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <permission
+        android:name="com.mapsmaps.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Sherlock.__Theme.Light" >
+        <activity
+            android:name="cz.nelasoft.opencms.mobile.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="cz.nelasoft.opencms.mobile.SplashActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" android:theme="@style/Theme.Sherlock.Light.NoActionBar">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cz.nelasoft.opencms.mobile.StructuredContentLoaderSupport"></activity>
+        <activity android:name="cz.nelasoft.opencms.mobile.NewsDetailActivity"></activity>
+        <activity android:name="cz.nelasoft.opencms.mobile.EventDetailActivity"></activity>
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyANeCXkaruoSGm9GchjiyNlN-jaNQaJ6Sw"/>  
+    </application>
+
+</manifest>

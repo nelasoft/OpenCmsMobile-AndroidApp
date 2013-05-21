@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="copyright">© 2013 NELASOFT Technologies, s.r.o.</string>
+    <string name="app_name">OpenCms Mobile</string>
+    <string name="title_activity_splash">Open Cms Mobile</string>
+    <string name="content_is_not_available">Content is not available</string>
+    <string name="telephon">phone</string>
+    <string name="fax">fax</string>
+    <string name="email">e-mail</string>
+    <string name="www">www</string>
+    <string name="date">Date</string>
+	<string name="time">Time</string>
+	<string name="locality">Lokalita</string>
+	<string name="loadingData">Loading data</string>
+	<string name="wait">Wait</string>
+	<string name="openWWW">Visit us</string>
+	<string name="openEmail">Contact us</string>
+	<string name="err_download_config">Download configuration failed. Please try it again later</string>
+	<string name="err_download_data">Download data failed. Please try it again later</string>
+</resources>
